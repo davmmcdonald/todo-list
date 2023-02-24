@@ -44,7 +44,7 @@
                     </div>
                 </li>
             </ol>
-            <p class="group">Projects<span class="add">+</span></p>
+            <p class="group">Projects<span class="add-project">+</span></p>
             <ol class="container">
                 <li class="nav-wrapper">Sample Project</li>
             </ol>
@@ -53,19 +53,19 @@
             <h1 class="title">Today</h1>
             <ol>
                 <li class="task-wrapper">
-                    <div class="priority" style="background-color: #000000;"></div>
-                    <div class="checkbox">
+                    <input type="color" class="priority">
+                    <div class="checkbox checked">
                         <i class="las la-check"></i>
                     </div>
-                    <input type="text">
-                    <select name="" id="">
-                        <option value="0">All</option>
+                    <input type="text" class="description">
+                    <select class="project-dropdown">
+                        <option value="0">(none)</option>
                     </select>
-                    <input type="date">
-                    <i class="option las la-pen"></i>
+                    <input type="date" class="date">
                     <i class="option las la-trash"></i>
                 </li>
             </ol>
+            <button class="add-task">+ Add Task</button>
         </div>
     </main>
     <footer>

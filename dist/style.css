@@ -150,7 +150,7 @@ ol {
     font-weight: 700;
 }
 
-.add {
+.add-project {
     float: right;
 }
 
@@ -161,6 +161,7 @@ ol {
 }
 
 .section {
+    flex: 1;
     padding: 32px;
 }
 
@@ -174,6 +175,7 @@ ol {
     position: relative;
     display: flex;
     align-items: center;
+    margin-bottom: 8px;
     padding: 8px 16px 8px 24px;
     border: 1px solid var(--secondary-light);
     border-radius: 8px;
@@ -186,4 +188,85 @@ ol {
     left: 0;
     width: 8px;
     height: 100%;
+    transition: width 300ms;
+    cursor: pointer;
+}
+
+.priority:hover {
+    width: 16px;
+}
+
+.priority::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+.priority::-webkit-color-swatch {
+	border: none;
+}
+
+.checkbox {
+    display: inline-grid;
+    place-content: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 50%;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.checked {
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+}
+
+.description {
+    flex: 2;
+    margin-left: 8px;
+    padding-left: 8px;
+}
+
+.project-dropdown {
+    flex: 1;
+    margin-left: 8px;
+    padding-left: 8px;
+    border-left: 1px solid var(--secondary-light);
+    cursor: pointer;
+}
+
+.date {
+    flex: 1;
+    margin: 0px 16px 0px 8px;
+    padding-left: 8px;
+    border-left: 1px solid var(--secondary-light);
+    cursor: text;
+}
+
+.option {
+    margin-left: 8px;
+    font-size: 24px;
+    color: var(--secondary-color);
+    transition: color 300ms;
+    cursor: pointer;
+}
+
+.option:hover {
+    color: var(--primary-color);
+}
+
+.add-task {
+    padding: 8px 24px;
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+    font-weight: 700;
+    color: var(--primary-color);
+    transition: background-color 300ms, color 300ms;
+    cursor: pointer;
+}
+
+.add-task:hover {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
 }
