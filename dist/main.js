@@ -1,0 +1,1 @@
+(()=>{"use strict";(class{static dataExists(){return!!localStorage.taskList}}).dataExists()?console.log("exists"):console.log("does not exist")})();

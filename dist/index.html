@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">task.ly</h1>
+    </header>
+    <main class="main">
+        <div class="sidebar">
+            <div class="avatar"></div>
+            <p class="username">Wecome, <span class="highlighted">David</span>!</p>
+            <ol>
+                <li class="nav-wrapper selected">
+                    <i class="icon las la-bullseye"></i>
+                    <p>Today</p>
+                    <div class="counter">
+                        <p>0</p>
+                    </div>
+                </li>
+                <li class="nav-wrapper">
+                    <i class="icon las la-calendar"></i>
+                    <p>This Week</p>
+                    <div class="counter">
+                        <p>0</p>
+                    </div>
+                </li>
+                <li class="nav-wrapper">
+                    <i class="icon las la-tasks"></i>
+                    <p>All Tasks</p>
+                    <div class="counter">
+                        <p>0</p>
+                    </div>
+                </li>
+            </ol>
+            <p class="group">Projects<span class="add">+</span></p>
+            <ol class="container">
+                <li class="nav-wrapper">Sample Project</li>
+            </ol>
+        </div>
+        <div class="section">
+            <h1 class="title">Today</h1>
+            <ol>
+                <li class="task-wrapper">
+                    <div class="priority" style="background-color: #000000;"></div>
+                    <div class="checkbox">
+                        <i class="las la-check"></i>
+                    </div>
+                    <input type="text">
+                    <select name="" id="">
+                        <option value="0">All</option>
+                    </select>
+                    <input type="date">
+                    <i class="option las la-pen"></i>
+                    <i class="option las la-trash"></i>
+                </li>
+            </ol>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> David McDonald | <a href="https://github.com/davmmcdonald" target="_blank">GitHub</a></p>
+        <i class="lab la-github"></i>
+    </footer>
+</body>
+</html>
